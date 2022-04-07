@@ -39,54 +39,58 @@
         </div>
     </header>
 
-    <form action="/registro" method="post"></form>
-    <div>
+    <form action="/registro" method="post" class="formulario-de-registro">
+        <div>
+            <div>
+                <input type="text" name="nombre" id="nombre-y-apellido">
+            </div>
+            <div>
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" name="nombre-de-usuario" id="usuario">
+            </div>
+            <div>
+                <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
+            </div>    
+            <div>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </div>
+        </div>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido">
-        <label for="usuario">Nombre de usuario:</label>
-        <input type="text" name="nombre-de-usuario" id="usuario">
-        <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
-        <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
-        <label for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio" id="domicilio">
+        <div class="perfil">
+            <input type="radio" name="perfil" value="comprar">
+            <label for="perfil"> Comprar</label>
+            <input type="radio" name="perfil" value="vender">
+            <label for="perfil"> Vender</label>
+        </div>
+        
+        <h3> Intereses </h3>
+        <div class="intereses">
+            <input type="checkbox" name="intereses" value="electro">
+            <label for="electro"> Electro </label>
+            <input type="checkbox" name="intereses" value="moda">
+            <label for="moda"> Moda </label>
+            <input type="checkbox" name="intereses" value="hogar">
+            <label for="hogar"> Hogar </label>
+            <input type="checkbox" name="intereses" value="jueguetería">
+            <label for="Juguetería"> Moda </label>
+            <input type="checkbox" name="intereses" value="vida-sana">
+            <label for="vida-sana"> Hogar </label>
+        </div>
 
-    </div>
+        <h3>Foto de Perfil</h3>
+            <label> Seleccione una foto de perfil: </label>
+            <input type="file" name="foto" accept=".jpg, .png"> 
 
-    <div class="perfil">
-        <input type="radio" name="perfil" value="comprar">
-        <label for="perfil"> Comprar</label>
-        <input type="radio" name="perfil" value="vender">
-        <label for="perfil"> Vender</label>
-    </div>
-    
-    <h3> Intereses </h3>
-    <div class="intereses">
-        <input type="checkbox" name="intereses" value="electro">
-        <label for="electro"> Electro </label>
-        <input type="checkbox" name="intereses" value="moda">
-        <label for="moda"> Moda </label>
-        <input type="checkbox" name="intereses" value="hogar">
-        <label for="hogar"> Hogar </label>
-        <input type="checkbox" name="intereses" value="jueguetería">
-        <label for="Juguetería"> Moda </label>
-        <input type="checkbox" name="intereses" value="vida-sana">
-        <label for="vida-sana"> Hogar </label>
-    </div>
+        <div class="passwords">
+            <input type="password" name="password" required minlength="8" placeholder="Escribe tu contraseña:">
+            <input type="password" name="password-confirm" required minlength="8" placeholder="Confirma tu contraseña">
+        </div>
 
-    <h3>Foto de Perfil</h3>
-        <label> Seleccione una foto de perfil: </label>
-        <input type="file" name="foto" accept=".jpg, .png"> 
-
-    <div class="passwords">
-        <input type="password" name="password" required minlength="8" placeholder="Escribe tu contraseña:">
-        <input type="password" name="password-confirm" required minlength="8" placeholder="Confirma tu contraseña">
-    </div>
-
-    <button type="submit" name="enviar">Enviar</button>
-    <button type="reset" name="borrar"></buttontype>Borrar</button>
+        <button type="submit" name="enviar">Enviar</button>
+        <button type="reset" name="borrar"></buttontype>Borrar</button>
+    </form> 
     
 </body>
 

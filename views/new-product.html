@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/new-product-styles.css">
     </head>
     <body>
         <header>
@@ -15,13 +15,12 @@
                     <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
                 <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
+                    <input type="text" name="input" placeholder="Buscar productos, marcas y más"><i class="fa fa-search"></i>
                 </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+                <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
             </div>
-            <nav>
-                <ul>
+            <nav class="main-navbar">
+                <ul class="menu">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="/new-product">Vender</a></li>
@@ -37,38 +36,43 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-
         
     <!-- Formulario -->
-        <form action="/crear-producto" method="POST">
-            <div>
+        <form action="/crear-producto" method="POST" class="create-form">
+            <div class= "control-de-formulario">
                 <label>Nombre del Producto:</label>
-                <input type="text" name="nombre"> </input>
+                <input type="text" name="nombre" class="control">
             </div>
-            <div>
+            <div class= "control-de-formulario">
                 <label>Precio del Producto:</label>
-                <input type="number" name="precio"> </input>
+                <input type="number" name="precio" placeholder="1234.56" class="control">
             </div>
-            <div>
+            <div class= "control-de-formulario">
                 <label>Categoría:</label>
-                <select name="categoria">
+                <select name="categoria" class="control">
                     <option value="electro">Electro</option>
                     <option value="hogar">Hogar</option>
                     <option value="indumentaria">Indumentaria</option>
                 </select>
             </div>
-            <div>
-                <label>Está en oferta:</label>
-                <input type="radio" name="enOferta"> </input>
-            </div>
-            <div>
+            <div class= "control-de-formulario">
                 <label>Ciudad:</label>
-                <select name="categoria">
+                <select name="categoria" class="control">
                     <option value="ba">Buenos Aires</option>
                     <option value="ros">Rosario</option>
                     <option value="mdz">Mendoza</option>
                 </select>
             </div>
+            <div class= "control-de-formulario">
+                <label>Descripción del Producto</label>
+                <textarea name="descripcion" id="" rows="2" class="control"></textarea>
+            </div>
+            <div class= "control-de-formulario">
+                <label>Está en oferta:</label>
+                <input type="radio" name="enOferta"> </input>
+            </div>
+            <button type="submit" class="form-button">Guardar</button>
+            <button type="reset" class="form-button">Borrar</button>
         </form>
     </body>
 </html>

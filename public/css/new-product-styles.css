@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
+div.top-header p{
+    font-size: 16px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    display: none;
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+/*ESTILO DEL FORMULARIO*/
+.formulario-de-registro{
+    padding: 5px;
+    margin: 5px;
+}
+
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-de-formulario{
+    margin-bottom: 15px; 
+}
+
+.control-de-formulario label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.form-button{
+    background-color: #0044AA;
+    border: none;
+    font-size: 20;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 5px;
+    display: block;
+}
+
+.section{
+    justify-content: center;
+    align-items: center;
+}
+
+.campo{
+    display: block;
+    width: 80%;
+    margin: 15px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+@media (min-width: 361px){
+    header nav{
+        display: block;
+    }
+
+    .description {
+        display: block;
+    }
+    div.burger-menu {
+        display: none;
+    } 
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-navbar ul li {
+        display: inline;
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+}
+
+/*DESKTOP*/
+@media (min-width: 769px){
+   
+}
+
+@media (min-width: 1200px){
+    .top-header, .main-navbar{
+        max-width: 1200px;
+        margin: auto
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+
+    .main-navbar a {
+        font-size: 18px;
+    }
+}
