@@ -229,7 +229,9 @@ footer{
 
 /*DESKTOP*/
 @media (min-width: 769px){
-   
+    article:hover{
+        box-shadow: 0 0 10px rgb(100,100,100);
+    }
 }
 
 @media (min-width: 1200px){
