@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/new-product-styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <input type="text" name="input" placeholder="Buscar productos, marcas y más"><i class="fa fa-search"></i>
-                </div>
-                <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home-styles.css">
+    <link rel="stylesheet" href="/css/register-styles.css">
+    <link rel="stylesheet" href="/css/new-product-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" /> 
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo de mercado liebre"></a>
             </div>
-            <nav class="main-navbar">
-                <ul class="menu">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
+            <div class="form" action="#" method="GET">
+                <input class="input" placeholder="Buscar aquí">
+                <button class="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de credito</p>
+        </div>
+        <nav>
+            <div>
+                <ul class="nav-ml">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas oficiales</a></li>
                     <li><a href="/new-product">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="">Ayuda</a></li>
                 </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
             </div>
-        </header>
-        
+            <div>
+                <ul class="nav-user">
+                    <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
     <!-- Formulario -->
+    <div class="form-container">
         <form action="/crear-producto" method="POST" class="create-form">
             <div class= "control-de-formulario">
                 <label>Nombre del Producto:</label>
@@ -71,8 +79,12 @@
                 <label>Está en oferta:</label>
                 <input type="radio" name="enOferta"> </input>
             </div>
-            <button type="submit" class="form-button">Guardar</button>
-            <button type="reset" class="form-button">Borrar</button>
+            <div class="button">
+                <button type="submit" class="form-button">Guardar</button>
+                <button type="reset" class="form-button">Borrar</button>
+            </div>
+
         </form>
-    </body>
+    </div>
+</body>
 </html>

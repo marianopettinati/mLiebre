@@ -30,16 +30,16 @@ header div.logo img{
     width: 60%;
 }
 
+header div.top-header div.form button{
+    height: 22px;
+}
+
 header nav{
     font-size: 12px;
 }
 
 header .form{
     width: 50%;
-}
-
-header div.top-header div.form button{
-    height: 22px;
 }
 
 header .form .input{
@@ -49,6 +49,7 @@ header .form .input{
     color: #666;
     padding: 3px;
     border:none;
+    margin: 0;
     width: 80%;
 }
 header .form .submit{
@@ -82,6 +83,93 @@ div.burger-menu{
     width: 40px;
 }
 
+main {
+    padding: 30px 0;
+}
+
+main div.form-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.form-container .user-data input{
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+main div.form-container .user-data label{
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+main div.form-container .user-profile{
+    padding: 10px;
+}
+
+main div.form-container .user-profile .tipe-profile{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+input{
+    margin-right: 5px;
+}
+
+main div.form-container .intereses{
+    padding: 10px;
+}
+
+main div.form-container .intereses .lista-intereses{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main .documentos{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+main .documentos input{
+    cursor: pointer;
+}
+
+main .passwords{
+    display: flex;
+    flex-direction: column;
+}
+
+main .passwords input{
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+main .button button{
+    padding: 5px;
+    margin: 5px 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #1259c3;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+}
+
 nav{
     display: none;
 }
@@ -99,48 +187,6 @@ header nav ul li a{
 main{
     width: 90%;
     margin: 0 auto;
-}
-
-main div.ingresar{
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-}
-
-main div.ingresar form{
-    width: 60%;
-}
-
-main div.ingresar form input{
-    width: 100%;
-    margin: 15px 0;
-    height: 34px;
-    border-radius: 3px;
-    border: none;
-    padding: 10px;
-}
-
-main div.ingresar form button{
-    width: 100%;
-    margin: 15px 0;
-    height: 34px;
-    border-radius: 3px;
-    border: none;
-    padding: 10px;
-}
-
-main div.ingresar form button{
-    background-color: #1259c3;
-    cursor: pointer;
-}
-
-main div.ingresar form button:hover{
-    background-color: #0022AA;
-}
-
-main div.ingresar form button a{
-    color: #FFF;
-    text-decoration: none;
 }
 
 p{
@@ -188,7 +234,7 @@ footer .container p{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 33%;
     }
     nav div .nav-ml{
         display: flex;
@@ -197,12 +243,11 @@ footer .container p{
     nav div .nav-user{
         display: flex;
     }
-
     header div.logo{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50%;
+        width: 33%;
     }
     footer .contenido .container i:hover{
         color:#EAC926;
@@ -218,23 +263,21 @@ footer .container p{
     div.burger-menu{
         display: none;
     }
-    nav div .nav-ml{
-        display: flex;
-        padding-left: 20px;
-    }
-
     header .form{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 33%;
     }
+    nav div .nav-ml{
+        display: flex;
+        padding-left: 20px;
+    }
     
     nav div .nav-user{
         display: flex;
         padding-right: 20px;
     }
-
     header div.logo{
         display: flex;
         align-items: center;
@@ -244,7 +287,6 @@ footer .container p{
     header div.top-header p{
         width: 33%;
     }
-    
     footer .contenido{
         padding-top: 30px;
         display: flex;
