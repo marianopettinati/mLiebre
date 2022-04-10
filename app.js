@@ -2,10 +2,15 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
+const port = process.env.PORT || 4000;
 
-app.listen(process.env.PORT || 3000, function() {
-    console.log('Servidor on line');
-});
+const publicFolderPath = path.resolve(__dirname, "./public")
+app.use(express.static(publicFolderPath));
+
+
+app.listen (port, ()=> {
+    console.log("Servidor online")
+})
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
